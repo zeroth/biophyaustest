@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Senthil Arumugam",
+        "image": "senthil.jpg",
+        "position": "EMBL Australia Group Leader",
+        "organization": "Monash University",
+        "email": "senthil.arumugam@monash.edu",
+        "twitter": "dopaminator"
+    },
+    {
+        "name": "Abhishek Patil",
+        "image": "abhishek.jpg",
+        "position": "PhD Student",
+        "organization": "Monash University",
+        "email": "abhishek.patil@monash.edu",
+        "twitter": "abhishekworld"
+    },
+    {
+        "name": "Harrison York",
+        "image": "harrison.jpg",
+        "position": "PhD Student",
+        "organization": "Monash University",
+        "email": "harrison.york@monash.edu",
+        "twitter": "HarrisonMYork"
+    }
+]

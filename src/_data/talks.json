@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Helge Ewers",
+        "image": "helge.jpeg",
+        "organization": "FREIE UNIVERSITÄT BERLIN",
+        "about": "The Ewers Group are an interdisciplinary team with a keen interest in cell biology, computational biophysics and novel instrumentation. Their recent work has focused on using single molecule localisation microscopy to study the assembly of multiprotein complexes at the membrane-cytoskeleton interface.",
+        "url": "https://www.bcp.fu-berlin.de/en/chemie/biochemie/research-groups/ewers-group/index.html",
+        "date": "2021-09-23",
+        "time": "5pm, AEST"
+    },
+    {
+        "name": "Simone Reber",
+        "banner": "simone_banner.png",
+        "organization": "Humboldt-Universität zu Berlin",
+        "image": "simone.jpg",
+        "about": "The Reber Lab has an enthusiastic focus on understanding the biochemical and biophysical principles of that underlie the self-organization and scaling of subcellular organelles. Recent work from the lab has been focused on understanding the mitotic spindle and how the physical and biochemical properties inform its structure and dynamics.",
+        "url": "https://www.thereberlab.com/",
+        "date": "2021-10-12",
+        "time": "5pm, AEST",
+        "zoom": {
+            "url": "https://monash.zoom.us/j/87386915192?pwd=SXo1UlVjVExpKzZkNlhoUFJscXlnUT09",
+            "id": "83786915192",
+            "password": "321302"
+        },
+        "active": true
+    },
+    {
+        "name": "Yamuna Krishnan",
+        "title": "Sub-cellular electrophysiology",
+        "banner": "yamuna_banner.jpg",
+        "organization": "University of Chicago.",
+        "image": "yamuna.jpg",
+        "about": "The chemical milieu within an organelle has been evolutionarily optimized to enable   the biochemistry that drives organelle function. To quantitate lumenal chemistry, my lab developed a DNA-based reporter technology to derive chemical heat-maps of organelles by fluorescently imaging lumenal ions or reactive species in them (1). This technology can now be used for discovery biology or biomedical applications by interrogating organelles of cells in culture, in live multicellular organisms (2) in cells obtained from blood draws (3) or skin biopsies from human patients  (4).  For   example   we   recently   solved   a   thirty-year   problem   in   molecular   sensing   by mapping lumenal calcium in acidic organelles and in doing so, identified the first example of a protein that facilitates lysosomal Ca2+ import in the animal kingdom (2). I will describe our most recent   DNA-based   reporter   for   absolute   membrane   potential   and   how   we   used   it   to   end   a previous misconception that many organelles, do in fact, a harbor membrane potential (4). I will close with a discussion of what it would take to develop an electrochemical model for organelle membranes, to explore the function of organelle-resident ion channels and transporters.",
+        "url": "https://krishnanlab.uchicago.edu/",
+        "date": "2021-11-25",
+        "time": "11am, AEST",
+        "zoom": {
+            "url": "https://monash.zoom.us/j/87386915192?pwd=SXo1UlVjVExpKzZkNlhoUFJscXlnUT09",
+            "id": "83786915192",
+            "password": "321302"
+        },
+        "references": [
+            "Krishnan,   Y.*,   Zou,   J.,   Jani,   M.S.   “Quantitative   imaging   of   biochemistry  in situ  and   at   the nanoscale.” ACS Cent. Sci., 2020, 6, 1938–1954.",
+            "Narayanaswamy, N., Chakraborty, K., Saminathan, A., Leung, K.H., Zeichner, E., Devany, J., Krishnan,   Y.*  'A   pH-correctable,   DNA-based   fluorescent   reporter   for   organellar   Calcium.' Nature Methods, 2019, 16, 95-102.",
+            "Leung, K., Chakraborty, K., Saminathan, A.,  Krishnan, Y.*  “A DNA Nanomachine chemically resolves lysosomes in live cells.” Nature Nanotechnology, 2019, 14, 176-183.",
+            "Saminathan, A., Devany, J., Pillai, K. S., Veetil, A. T., Schwake, M., Krishnan, Y*. “A DNA-based voltmeter for organelles.” Nature Nanotechnology, 2021, 16, 96-103."
+        ],
+        "active": true
+    }
+]

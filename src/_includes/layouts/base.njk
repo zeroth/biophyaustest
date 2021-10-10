@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="biophysics Australia Seminar Series" />
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css" />
+    {% metagen
+    title=talk.name or site.title,
+    desc= talk.about  or site.desc,
+    url=site.url + page.url,
+    img= site.url+'/assets/images/'+ (talk.image or site.image),
+    img_alt=talk.name or site.title,
+    twitter_card_type=summary_large_image,
+    twitter_handle='biophysicsaus',
+    name=talk.name or site.title
+    %}
+</head>
+
+<body>
+    <header class="bg-cover bg-center bg-gray-500 border-b border-gray-500"
+        style="background-image: url(/assets/images/{{ talk.banner if talk.banner else 'banner.png' }})">
+        {# <img class="object-cover object-center" src="/assets/images/banner.png" alt="banner"> #}
+        <div class="container m-auto text-center pt-10 pb-3 text-white">
+            <img class="m-auto w-1/6" src="/assets/images/logo.png" alt="Logo">
+            <h1 class="px-2">Biophysics Australia Seminar Series</h1>
+        </div>
+        <nav class="flex justify-center container m-auto text-center py-5">
+            <div class="grid grid-cols-3 gap-2 place-content-center text-white">
+                <a class="no-underline py-2 px-3 border-2 border-gray-400 rounded-md hover:bg-gray-400" href="/">Home</a>
+                <a class="no-underline py-2 px-3 border-2 border-gray-400 rounded-md hover:bg-gray-400" href="/about">About</a>
+                <a class="no-underline py-2 px-3 bg-gray-300 border-2 border-gray-400 rounded-md hover:bg-gray-400" href="/about">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="m-auto w-full border-t border-gray-300 ">
+        <div class="pt-3 pb-2 md:max-w-screen-md md:m-auto text-center ">
+            <p>This site is maintained by <a class="text-yellow-700" target="_blank" href="https://zeroth.me">Abhishek
+                    Patil</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

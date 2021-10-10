@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+templateClass: single
+---
+<main class="md:p-10 p-5">
+    <div class="container m-auto">
+        {{ content | safe }}
+    </div>
+
+    <div class="max-w-3xl m-auto">
+        <div class="max-w-full md:w-full ">
+            <div class="flex max-w-full md:w-full h-5/6 md:p-5">
+                <div class="w-3/4 ">
+                    <div class="pb-5 text-xl">
+                        <div>
+                            <h2 class="font-medium text-3xl">{{talk.name}}</h2>
+                        </div>
+                        <div>
+                            <p class="font-thin text-md">{{talk.organization | titleCase}}</p>
+                        </div>
+                        <div>
+                            <a href="{{talk.url}}">{% labname talk.name %}</a>
+                        </div>
+                        <div class="pt-5">
+                            <div><strong>Date: </strong> {{talk.date | htmlDateString}}</div>
+                            <div><strong>Time: </strong>{{talk.time}}</div>
+                        </div>
+                    </div>
+                    <div class="pr-5 md:text-justify text-xl">
+                        <div>
+                            {% if talk.zoom %}
+                            <div><strong>Zoom id: </strong><a
+                                    href="{{talk.zoom.url}}"><strong>{{talk.zoom.id}}</strong></a></div>
+                            <div><strong>Password: </strong><strong>{{talk.zoom.password}}</strong></div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 shadow-md rounded-lg">
+                    <img class="object-cover h-full rounded-lg" src="/assets/images/{{talk.image}}" alt="{{talk.name}}">
+                </div>
+            </div>
+            <div class="text-xl md:p-5 pt-5">
+                <h4 class="text-md font-bold pb-3">{{talk.title | titleCase if talk.title }}</h4>
+                <p>{{talk.about}}</p>
+            </div>
+            {% if talk.references %}
+            <div class="text-xl md:p-5 pt-5">
+                <p>References</p>
+                <ol class="list-decimal list-inside space-y-2">
+                {% for r in talk.references %}
+                <li>{{r}}</li>
+                {% endfor %}
+                </ol>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+
+
+</main>

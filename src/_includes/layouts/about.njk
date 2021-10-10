@@ -1,0 +1,90 @@
+---
+layout: layouts/base.njk
+templateClass: about
+---
+<main class="container m-auto md:p-10 p-5">
+<div class="container m-auto">
+        {{ content | safe }}
+</div>
+<div class="container m-auto grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-3 h-1/2">
+    {% for user in organisers %}
+    <div class="h-full pb-5 bg-gray-100 ">
+        <figure class="rounded-md p-0 md:p-0 h-full">
+            <div class="w-full h-4/6">
+                <img class="object-center object-cover h-full rounded-t-lg " src="/assets/images/{{ user.image }}" alt="" width="384" height="512">
+            </div>
+            <div class="p-2 bg-gray-100">
+                <figcaption class="font-medium">
+                    <div class="text-cyan-600">
+                        {{ user.name }}
+                    </div>
+                    <div class="text-gray-500 ">
+                        {{ user.position}}
+                    </div>
+                    <div class="text-gray-500 ">
+                        {{ user.organization }}
+                    </div>
+                    <div class="text-blue-500 ">
+                        <div class="flex space-x-2 items-center ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                            <a class="text-base text-left break-all" target="_blank" href="mailto:senthil.arumugam@monash.edu">{{user.email}}</a>
+                        </div>
+                        <div class="flex space-x-2 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd" />
+                            </svg>
+                            <a class="text-base text-left break-all" target="_blank" href="https://twitter.com/dopaminator">{{user.twitter}}</a>
+                        </div>
+                    </div>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    {# <div>
+        <figure class=" bg-gray-100 rounded-xl p-8 md:p-0">
+            <img class="rounded-none mx-auto" src="/assets/images/abhishek.jpg" alt="" width="384" height="512">
+            <div class="pt-6 md:p-8 text-left space-y-4">
+                <figcaption class="font-medium">
+                <div class="text-cyan-600 py-1">
+                    Abhishek Patil
+                </div>
+                <div class="text-gray-500 text-base">
+                    PhD Student<br/>
+                    Arumugam Group<br/>
+                    Monash University
+                </div>
+                <div class="text-blue-500 text-base">
+                    Email: <a href="mailto:abhishek.patil@monash.edu">abhishek.patil@monash.edu</a><br/>
+                    Twitter: <a href="https://twitter.com/abhishekworld">@abhishekworld</a>
+                </div>
+                </figcaption>
+            </div>
+        </figure>
+  </div>
+  <div>
+        <figure class="bg-gray-100 rounded-xl p-8 md:p-0">
+            <img class="rounded-none mx-auto" src="/assets/images/harrison.jpg" alt="" width="384" height="512">
+            <div class="pt-6 md:p-8 text-left space-y-4">
+                <figcaption class="font-medium">
+                <div class="text-cyan-600 py-1">
+                    Harrison York
+                </div>
+                <div class="text-gray-500 text-base">
+                    PhD Student<br/>
+                    Arumugam Group<br/>
+                    Monash University
+                </div>
+                <div class="text-blue-500 text-base">
+                    Email: <a href="mailto:harrison.york@monash.edu">harrison.york@monash.edu</a><br/>
+                    Twitter: <a href="https://twitter.com/HarrisonMYork">@HarrisonMYork</a>
+                </div>
+                </figcaption>
+            </div>
+        </figure>
+  </div> #}
+    {% endfor %}
+</div>
+</main>

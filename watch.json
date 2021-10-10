@@ -1,0 +1,19 @@
+{
+    "install": {
+        "include": [
+            "^package\\.json$"
+        ],
+        "exclude": []
+    },
+    "restart": {
+        "include": [
+            "^\\.env$"
+        ],
+        "exclude": [
+            "\\.njk$",
+            "\\.css$",
+            "\\.md"
+        ]
+    },
+    "noSavedEvents": true
+}

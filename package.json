@@ -1,0 +1,27 @@
+{
+  "name": "biophysicsaus.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss assets/style/main.css -o assets/style/style.css",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-plugin-metagen": "^1.4.8"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "eleventy-plugin-seo": "^0.5.2",
+    "luxon": "^2.0.2",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^2.2.16"
+  }
+}
